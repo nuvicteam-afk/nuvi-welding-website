@@ -1,3 +1,4 @@
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -33,8 +34,6 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
-};
-
 };
 
 export default function RootLayout({ children }) {
