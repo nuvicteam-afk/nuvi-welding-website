@@ -76,20 +76,21 @@ export default function Page() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <img
-              src="/Fencing Brick Home.PNG"
-              alt="Custom steel fencing installed in Dallas Texas"
-              className="rounded-2xl shadow-lg h-[300px] w-full object-cover"
-            />
-            <img
-              src="/Staircases Dallas.PNG"
-              alt="Steel staircase fabrication in Dallas Fort Worth"
-              className="rounded-2xl shadow-lg h-[300px] w-full object-cover"
-            />
-            <img
-              src="/Handrails Colling College.PNG"
-              alt="Commercial steel handrails installed in Dallas TX"
-              className="rounded-2xl shadow-lg h-[300px] w-full object-cover"
-            />
+  src="/fencing.png"
+  alt="Custom steel fencing installed in Dallas Texas"
+  className="rounded-2xl shadow-lg h-[300px] w-full object-cover"
+/>
+<img
+  src="/stairs.png"
+  alt="Steel staircase fabrication in Dallas Fort Worth"
+  className="rounded-2xl shadow-lg h-[300px] w-full object-cover"
+/>
+<img
+  src="/handrails.png"
+  alt="Commercial steel handrails installed in Dallas TX"
+  className="rounded-2xl shadow-lg h-[300px] w-full object-cover"
+/>
+
           </div>
         </div>
       </section>
