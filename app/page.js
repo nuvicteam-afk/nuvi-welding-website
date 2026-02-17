@@ -17,6 +17,52 @@ export default function Page() {
           Call 24/7
         </a>
       </header>
+  
+{/* HERO VIDEO */}
+<section className="relative h-[90vh] w-full overflow-hidden">
+  {/* Background Video */}
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="absolute top-0 left-0 w-full h-full object-cover"
+  >
+    <source src="/hero-welding.mp4" type="video/mp4" />
+  </video>
+
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black/60"></div>
+
+  {/* Hero Content */}
+  <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
+    <h2 className="text-white text-4xl md:text-6xl font-bold mb-4">
+      24/7 MOBILE WELDING
+    </h2>
+
+    <p className="text-gray-200 text-lg md:text-xl max-w-2xl mb-6">
+      Welding • Fabrication • Fencing • Staircases • Handrails
+      <br />
+      Serving Dallas–Fort Worth
+    </p>
+
+    <div className="flex flex-col sm:flex-row gap-4">
+      <a
+        href="tel:4698455728"
+        className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-semibold text-lg"
+      >
+        Call Now
+      </a>
+
+      <a
+        href="#contact"
+        className="bg-white text-black px-8 py-4 rounded-xl font-semibold text-lg"
+      >
+        Free Estimate
+      </a>
+    </div>
+  </div>
+</section>
 
       {/* HERO */}
       <section className="bg-gray-900 text-white py-20 px-6 text-center">
