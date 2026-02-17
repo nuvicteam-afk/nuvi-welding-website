@@ -64,32 +64,6 @@ export default function Page() {
   </div>
 </section>
 
-      {/* HERO */}
-      <section className="bg-gray-900 text-white py-20 px-6 text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
-          24/7 MOBILE WELDING & FABRICATION IN DALLAS–FORT WORTH
-        </h2>
-        <p className="max-w-3xl mx-auto text-lg mb-8 text-gray-200">
-          NUVI Welding and Fabrication LLC provides emergency and scheduled mobile
-          welding services across Dallas–Fort Worth. Specializing in fencing,
-          staircases, handrails, barndominiums, and custom steel fabrication.
-        </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a
-            href="tel:4698455728"
-            className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-bold"
-          >
-            Call Now
-          </a>
-          <a
-            href="#contact"
-            className="bg-white text-black hover:bg-gray-100 px-8 py-4 rounded-xl font-bold"
-          >
-            Request Free Estimate
-          </a>
-        </div>
-      </section>
-
       {/* SERVICES */}
       <section className="py-16 px-6 max-w-7xl mx-auto">
         <h3 className="text-3xl font-bold text-center mb-12">
