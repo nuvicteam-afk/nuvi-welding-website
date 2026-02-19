@@ -197,43 +197,54 @@ export default function Page() {
           </div>
         </section>
 
-        {/* FAQ */}
-        <section className="py-16 px-6 bg-white">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-10">
-              Mobile Welding FAQ – Dallas–Fort Worth
-            </h2>
+{/* FAQ SECTION */}
+<section className="py-20 px-6 bg-gray-50">
+  <div className="max-w-4xl mx-auto">
 
-            <div className="space-y-6">
-              <div>
-                <h3 className="font-semibold text-lg">
-                  Do you offer 24/7 emergency mobile welding in Dallas?
-                </h3>
-                <p className="text-gray-700">
-                  Yes, we provide 24/7 emergency mobile welding services across Dallas and surrounding areas.
-                </p>
-              </div>
+    <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-center text-gray-900 mb-4">
+      Mobile Welding FAQ
+    </h2>
 
-              <div>
-                <h3 className="font-semibold text-lg">
-                  What areas do you serve?
-                </h3>
-                <p className="text-gray-700">
-                  Dallas, Fort Worth, Arlington, Plano, Frisco, Irving, Garland, McKinney and surrounding Texas cities.
-                </p>
-              </div>
+    <p className="text-center text-lg text-gray-600 mb-14">
+      Answers to common questions about our 24/7 mobile welding services in
+      Dallas–Fort Worth and surrounding areas.
+    </p>
 
-              <div>
-                <h3 className="font-semibold text-lg">
-                  What types of welding projects do you handle?
-                </h3>
-                <p className="text-gray-700">
-                  Fencing, staircases, handrails, structural steel, barndominiums and custom fabrication.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+    <div className="space-y-10">
+
+      <div className="border-b border-gray-200 pb-6">
+        <h3 className="text-xl md:text-2xl font-semibold tracking-tight text-gray-900 mb-3">
+          Do you offer 24/7 emergency mobile welding in Dallas?
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-lg">
+          Yes. NUVI Welding & Fabrication LLC provides 24/7 emergency mobile
+          welding services throughout Dallas and surrounding Texas cities.
+        </p>
+      </div>
+
+      <div className="border-b border-gray-200 pb-6">
+        <h3 className="text-xl md:text-2xl font-semibold tracking-tight text-gray-900 mb-3">
+          What areas do you serve outside Dallas?
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-lg">
+          We proudly serve Fort Worth, Arlington, Plano, Frisco, Irving,
+          Garland, McKinney and other surrounding communities.
+        </p>
+      </div>
+
+      <div className="border-b border-gray-200 pb-6">
+        <h3 className="text-xl md:text-2xl font-semibold tracking-tight text-gray-900 mb-3">
+          What types of welding projects do you handle?
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-lg">
+          We specialize in fencing, staircases, handrails, barndominiums,
+          structural steel and custom metal fabrication projects.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
         {/* FOOTER */}
         <footer className="bg-black text-gray-300 py-6 text-center text-sm">
