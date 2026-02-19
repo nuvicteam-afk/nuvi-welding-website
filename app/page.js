@@ -239,7 +239,7 @@ export default function Page() {
           What types of welding projects do you handle?
         </h3>
         <p className="text-gray-600 leading-relaxed text-lg">
-          We specialize in fencing, staircases, handrails, Stainles Steel, barndominiums,
+          We specialize in fencing, staircases, handrails, Stainless Steel, barndominiums,
           structural steel and custom metal fabrication projects.
         </p>
       </div>
