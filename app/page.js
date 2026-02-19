@@ -39,23 +39,23 @@ export default function Page() {
 
       <div className="min-h-screen bg-white text-gray-900">
 
-        {/* HEADER */}
-        <header className="bg-black/80 backdrop-blur text-white px-6 py-4 flex items-center justify-between fixed w-full z-50">
-          <img
-            src="/nuvi-logo.png"
-            alt="NUVI Welding and Fabrication LLC Logo"
-           className="h-20 md:h-22 w-auto"
-          />
-          <a
-            href="tel:4698455728"
-            className="bg-red-600 hover:bg-red-700 px-5 py-2 rounded-full font-semibold tracking-wide"
-          >
-            Call 24/7
-          </a>
-        </header>
+  <header className="bg-black/80 backdrop-blur text-white px-6 h-20 flex items-center justify-between fixed top-0 left-0 w-full z-50">
+  <img
+    src="/nuvi-logo.png"
+    alt="NUVI Welding and Fabrication LLC Logo"
+    className="h-16 md:h-18 w-auto"
+  />
+
+  <a
+    href="tel:4698455728"
+    className="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-full font-semibold tracking-wide"
+  >
+    Call 24/7
+  </a>
+</header>
 
         {/* HERO VIDEO */}
-        <section className="relative h-screen w-full overflow-hidden pt-20">
+   <section className="relative h-screen w-full overflow-hidden pt-20 md:pt-24">
           <video
             autoPlay
             loop
