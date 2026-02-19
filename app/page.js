@@ -229,7 +229,8 @@ export default function Page() {
         </h3>
         <p className="text-gray-600 leading-relaxed text-lg">
           We proudly serve Fort Worth, Arlington, Plano, Frisco, Irving,
-          Garland, McKinney and other surrounding communities.
+          Garland, McKinney and other surrounding cities. We also serve All Texas Surrounding States Like Oklahoma,
+            Louisiana, Arkansas and New Mexico.
         </p>
       </div>
 
@@ -238,7 +239,7 @@ export default function Page() {
           What types of welding projects do you handle?
         </h3>
         <p className="text-gray-600 leading-relaxed text-lg">
-          We specialize in fencing, staircases, handrails, barndominiums,
+          We specialize in fencing, staircases, handrails, Stainles Steel, barndominiums,
           structural steel and custom metal fabrication projects.
         </p>
       </div>
