@@ -7,16 +7,25 @@ export default function Page() {
     <div className="min-h-screen bg-white text-gray-900">
       {/* HEADER */}
       <header className="bg-black text-white px-6 py-5 flex items-center justify-between">
-        <h1 className="font-extrabold tracking-wide text-lg">
-          NUVI WELDING AND FABRICATION LLC
-        </h1>
-        <a
-          href="tel:4698455728"
-          className="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg font-semibold"
-        >
-          CALL 24/7
-        </a>
-      </header>
+  <div className="flex items-center gap-4">
+    <img
+      src="/nuvi-logo.png"
+      alt="NUVI Welding and Fabrication Logo"
+      className="h-10 w-auto"
+    />
+    <h1 className="font-extrabold tracking-wide text-lg">
+      NUVI WELDING AND FABRICATION LLC
+    </h1>
+  </div>
+
+  <a
+    href="tel:4698455728"
+    className="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg font-semibold"
+  >
+    Call 24/7
+  </a>
+</header>
+
   
 {/* HERO VIDEO */}
 <section className="relative h-[90vh] w-full overflow-hidden">
