@@ -36,11 +36,11 @@ export default function Page() {
 
   {/* Hero Content */}
   <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
-    <h2 className="text-white text-4xl md:text-6xl font-bold mb-4">
-      24/7 MOBILE WELDING
-    </h2>
+    <h2 className="text-white text-4xl md:text-6xl font-extrabold tracking-tight uppercase mb-4">
+  24/7 Mobile Welding
+</h2>
 
-    <p className="text-gray-200 text-lg md:text-xl max-w-2xl mb-6">
+   <p className="text-gray-300 text-base md:text-lg max-w-2xl mb-8 tracking-wide leading-relaxed">
       Welding • Fabrication • Fencing • Staircases • Handrails
       <br />
       Serving Dallas–Fort Worth
