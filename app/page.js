@@ -5,7 +5,7 @@ import { Phone, Mail, Hammer } from "lucide-react";
 export default function Page() {
   return (
     <>
-      {/* LOCAL BUSINESS SCHEMA */}
+ 
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
