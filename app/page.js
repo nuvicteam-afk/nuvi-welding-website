@@ -149,7 +149,7 @@ export default function Page() {
 </h2>
 
 <h3 className="text-xl md:text-2xl font-semibold text-red-600 tracking-wide mb-6">
-  Dallas–Fort Worth & Surrounding States
+  Dallas–Fort Worth & Surrounding Cities
 </h3>
             <p className="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
               Proudly serving Dallas, Fort Worth, Arlington, Plano, Frisco,
