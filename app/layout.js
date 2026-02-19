@@ -1,19 +1,14 @@
-
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata = {
-  title: "NUVI Welding & Fabrication LLC | 24/7 Mobile Welding Dallas–Fort Worth",
+  title:
+    "NUVI Welding & Fabrication LLC | 24/7 Mobile Welding Dallas–Fort Worth",
   description:
     "NUVI Welding & Fabrication LLC provides 24/7 mobile welding services in Dallas, Fort Worth, Arlington, Plano, Frisco, Irving, Garland and surrounding Texas areas. Fencing, staircases, handrails, barndominiums and custom steel fabrication.",
   keywords: [
@@ -46,9 +41,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${inter.className} antialiased`}>
         {children}
       </body>
     </html>
