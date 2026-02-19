@@ -144,10 +144,14 @@ export default function Page() {
         {/* SERVICE AREA */}
         <section className="py-16 px-6 bg-white">
           <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">
-              Service Areas – Dallas–Fort Worth Welding
-            </h2>
-            <p className="text-gray-700 max-w-3xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-6">
+  Service Areas
+</h2>
+
+<h3 className="text-xl md:text-2xl font-semibold text-red-600 tracking-wide mb-6">
+  Dallas–Fort Worth & Surrounding Cities
+</h3>
+            <p className="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
               Proudly serving Dallas, Fort Worth, Arlington, Plano, Frisco,
               Irving, Garland, McKinney and surrounding Texas communities.
             </p>
@@ -158,8 +162,10 @@ export default function Page() {
         <section id="contact" className="py-16 px-6 bg-white">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
             <div>
-              <h2 className="text-3xl font-bold mb-4">Get a Free Estimate</h2>
-              <p className="text-gray-700 mb-6">
+<h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-6">
+  Get a Free Estimate
+</h2>
+<p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-lg">
                 Fast response. 24/7 emergency mobile welding available across Dallas–Fort Worth.
               </p>
 
