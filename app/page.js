@@ -14,7 +14,7 @@ export default function Page() {
           href="tel:4698455728"
           className="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg font-semibold"
         >
-          Call 24/7
+          CALL 24/7
         </a>
       </header>
   
