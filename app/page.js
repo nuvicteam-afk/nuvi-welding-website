@@ -158,15 +158,18 @@ export default function Page() {
             </p>
           </div>
           
-          <p className="mt-4 text-gray-600">
-  Looking for dedicated Dallas service? Visit our{" "}
-  <a 
-    href="/mobile-welding-dallas" 
-    className="text-red-600 font-semibold underline"
+        <div className="mt-8 p-6 bg-gray-50 rounded-2xl border border-gray-200 text-center">
+  <p className="text-gray-700 text-lg">
+    Looking for dedicated Dallas service?
+  </p>
+
+  <a
+    href="/mobile-welding-dallas"
+    className="inline-block mt-3 text-red-600 hover:text-red-700 font-semibold text-lg tracking-wide transition"
   >
-    Mobile Welding Dallas page
-  </a>.
-</p>
+    View Our Mobile Welding Dallas Page →
+  </a>
+</div>
       
         </section>
 
