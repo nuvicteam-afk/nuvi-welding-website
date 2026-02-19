@@ -44,7 +44,7 @@ export default function Page() {
           <img
             src="/nuvi-logo.png"
             alt="NUVI Welding and Fabrication LLC Logo"
-            className="h-12 w-auto"
+           className="h-20 md:h-22 w-auto"
           />
           <a
             href="tel:4698455728"
