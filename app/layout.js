@@ -13,25 +13,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "NUVI Welding and Fabrication LLC | 24/7 Mobile Welding Dallas–Fort Worth",
+  title: "NUVI Welding & Fabrication LLC | 24/7 Mobile Welding Dallas–Fort Worth",
   description:
-    "NUVI Welding and Fabrication LLC provides 24/7 mobile welding, fencing, staircases, handrails, and custom steel fabrication across Dallas–Fort Worth.",
-
+    "NUVI Welding & Fabrication LLC provides 24/7 mobile welding services in Dallas, Fort Worth, Arlington, Plano, Frisco, Irving, Garland and surrounding Texas areas. Fencing, staircases, handrails, barndominiums and custom steel fabrication.",
+  keywords: [
+    "Mobile Welding Dallas",
+    "Mobile Welding Fort Worth",
+    "Emergency Welding Dallas",
+    "Steel Fabrication Dallas",
+    "Fencing Contractor Dallas",
+    "Staircase Welding Fort Worth",
+    "Handrails Dallas TX",
+  ],
   openGraph: {
-    title: "NUVI Welding and Fabrication LLC",
+    title:
+      "NUVI Welding & Fabrication LLC | 24/7 Mobile Welding Dallas–Fort Worth",
     description:
-      "24/7 Mobile Welding & Fabrication serving Dallas–Fort Worth. Call for a free estimate.",
+      "Professional 24/7 mobile welding services across Dallas–Fort Worth and surrounding Texas cities.",
     url: "https://nuviwelding.com",
-    siteName: "NUVI Welding and Fabrication LLC",
+    siteName: "NUVI Welding & Fabrication LLC",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "NUVI Welding and Fabrication LLC – Dallas Mobile Welding",
       },
     ],
-    locale: "en_US",
     type: "website",
   },
 };
