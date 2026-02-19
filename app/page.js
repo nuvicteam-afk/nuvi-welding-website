@@ -154,7 +154,7 @@ export default function Page() {
             <p className="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
               Proudly serving Dallas, Fort Worth, Arlington, Plano, Frisco,
               Irving, Garland, McKinney and surrounding Texas communities, We also serve surrounding states like Oklahoma,
-          Louisiana Arkansas and New Mexico. 
+          Louisiana, Arkansas and New Mexico. 
             </p>
           </div>
         </section>
