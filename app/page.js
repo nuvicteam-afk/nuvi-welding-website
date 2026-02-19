@@ -5,30 +5,25 @@ import { Phone, Mail, Hammer } from "lucide-react";
 export default function Page() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      {/* HEADER */}
-      <header className="bg-black text-white px-6 py-5 flex items-center justify-between">
-  <div className="flex items-center gap-4">
-    <img
-      src="/nuvi-logo.png"
-      alt="NUVI Welding and Fabrication Logo"
-      className="h-12 w-auto"
-    />
-    <h1 className="font-extrabold tracking-wide text-lg">
-      NUVI WELDING AND FABRICATION LLC
-    </h1>
-  </div>
+    
+{/* HEADER */}
+<header className="bg-black/80 backdrop-blur text-white px-6 py-4 flex items-center justify-between fixed w-full z-50">
+  <img
+    src="/nuvi-logo.png"
+    alt="NUVI Welding and Fabrication LLC Logo"
+    className="h-12 w-auto"
+  />
 
   <a
     href="tel:4698455728"
-    className="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg font-semibold"
+    className="bg-red-600 hover:bg-red-700 px-5 py-2 rounded-full font-semibold tracking-wide"
   >
     Call 24/7
   </a>
 </header>
 
-  
 {/* HERO VIDEO */}
-<section className="relative h-[90vh] w-full overflow-hidden">
+<section className="relative h-screen w-full overflow-hidden pt-20">
   {/* Background Video */}
   <video
     autoPlay
@@ -41,33 +36,39 @@ export default function Page() {
   </video>
 
   {/* Dark Overlay */}
-  <div className="absolute inset-0 bg-black/60"></div>
+  <div className="absolute inset-0 bg-black/70"></div>
 
   {/* Hero Content */}
-  <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
-    <h2 className="text-white text-4xl md:text-6xl font-extrabold tracking-tight uppercase mb-4">
-  24/7 Mobile Welding
-</h2>
+  <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6 max-w-4xl mx-auto">
+    
+    <h1 className="text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+      NUVI Welding & Fabrication LLC
+    </h1>
 
-   <p className="text-gray-300 text-base md:text-lg max-w-2xl mb-8 tracking-wide leading-relaxed">
-      Welding • Fabrication • Fencing • Staircases • Handrails
-      <br />
-      Serving Dallas–Fort Worth
+    <h2 className="text-red-500 text-2xl md:text-3xl font-semibold tracking-wide mb-6">
+      24/7 Mobile Welding in Dallas–Fort Worth & Surrounding Areas
+    </h2>
+
+    <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-10 max-w-2xl">
+      Emergency and scheduled mobile welding services across Dallas, Fort Worth,
+      Arlington, Plano, Frisco, Irving, Garland, McKinney and surrounding Texas
+      communities. Specializing in fencing, staircases, handrails, barndominiums,
+      and custom steel fabrication.
     </p>
 
-    <div className="flex flex-col sm:flex-row gap-4">
+    <div className="flex flex-col sm:flex-row gap-5">
       <a
         href="tel:4698455728"
-        className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-semibold text-lg"
+        className="bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-full font-semibold text-lg tracking-wide shadow-lg"
       >
         Call Now
       </a>
 
       <a
         href="#contact"
-        className="bg-white text-black px-8 py-4 rounded-xl font-semibold text-lg"
+        className="bg-white text-black px-10 py-4 rounded-full font-semibold text-lg tracking-wide shadow-lg"
       >
-        Free Estimate
+        Get Free Estimate
       </a>
     </div>
   </div>
