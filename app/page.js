@@ -208,7 +208,7 @@ export default function Page() {
           </div>
 
           <form
-            action="mailto:nuvicteam@gmail.com"
+            action="https://formspree.io/f/xpqjlbqa"
             method="POST"
             encType="text/plain"
             className="bg-gray-100 p-6 rounded-2xl shadow"
