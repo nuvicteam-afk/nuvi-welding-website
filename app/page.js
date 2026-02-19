@@ -106,6 +106,16 @@ export default function Page() {
           <h2 className="text-3xl font-bold text-center mb-12">
             Mobile Welding & Fabrication Services in Dallas–Fort Worth
           </h2>
+          
+<p className="mt-4 text-gray-600">
+  Looking for dedicated Dallas service? Visit our{" "}
+  <a 
+    href="/mobile-welding-dallas" 
+    className="text-red-600 font-semibold underline"
+  >
+    Mobile Welding Dallas page
+  </a>.
+</p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {[
