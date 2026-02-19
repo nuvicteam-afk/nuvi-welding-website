@@ -3,36 +3,40 @@
 import { Phone, Mail, Hammer } from "lucide-react";
 
 export default function Page() {
-  return (<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "NUVI Welding & Fabrication LLC",
-      image: "https://nuviwelding.com/og-image.png",
-      telephone: "+1-469-845-5728",
-      email: "nuvicteam@gmail.com",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Dallas",
-        addressRegion: "TX",
-        addressCountry: "US",
-      },
-      areaServed: [
-        "Dallas TX",
-        "Fort Worth TX",
-        "Arlington TX",
-        "Plano TX",
-        "Frisco TX",
-        "Irving TX",
-        "Garland TX",
-        "McKinney TX",
-      ],
-      openingHours: "Mo-Su 00:00-23:59",
-    }),
-  }}
-/>
+  return (
+    return (
+  <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "NUVI Welding & Fabrication LLC",
+          image: "https://nuviwelding.com/og-image.png",
+          telephone: "+1-469-845-5728",
+          email: "nuvicteam@gmail.com",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Dallas",
+            addressRegion: "TX",
+            addressCountry: "US",
+          },
+          areaServed: [
+            "Dallas TX",
+            "Fort Worth TX",
+            "Arlington TX",
+            "Plano TX",
+            "Frisco TX",
+            "Irving TX",
+            "Garland TX",
+            "McKinney TX",
+          ],
+          openingHours: "Mo-Su 00:00-23:59",
+        }),
+      }}
+    />
+      
     <div className="min-h-screen bg-white text-gray-900">
     
 {/* HEADER */}
