@@ -3,7 +3,36 @@
 import { Phone, Mail, Hammer } from "lucide-react";
 
 export default function Page() {
-  return (
+  return (<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "NUVI Welding & Fabrication LLC",
+      image: "https://nuviwelding.com/og-image.png",
+      telephone: "+1-469-845-5728",
+      email: "nuvicteam@gmail.com",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Dallas",
+        addressRegion: "TX",
+        addressCountry: "US",
+      },
+      areaServed: [
+        "Dallas TX",
+        "Fort Worth TX",
+        "Arlington TX",
+        "Plano TX",
+        "Frisco TX",
+        "Irving TX",
+        "Garland TX",
+        "McKinney TX",
+      ],
+      openingHours: "Mo-Su 00:00-23:59",
+    }),
+  }}
+/>
     <div className="min-h-screen bg-white text-gray-900">
     
 {/* HEADER */}
@@ -125,6 +154,38 @@ export default function Page() {
         </div>
       </section>
 
+{/* GOOGLE REVIEWS */}
+<section className="py-16 px-6 bg-gray-100">
+  <div className="max-w-5xl mx-auto text-center">
+    <h3 className="text-3xl font-bold mb-6">
+      Trusted 5-Star Welding Services in Dallas–Fort Worth
+    </h3>
+
+    <div className="bg-white p-8 rounded-2xl shadow">
+      <p className="text-yellow-500 text-2xl mb-4">★★★★★</p>
+      <p className="text-gray-700 italic">
+        "Professional, reliable and fast response. Best mobile welding service
+        in Dallas. Highly recommend!"
+      </p>
+      <p className="mt-4 font-semibold">– Local Dallas Customer</p>
+    </div>
+  </div>
+</section>
+
+{/* SERVICE AREA */}
+<section className="py-16 px-6 bg-white">
+  <div className="max-w-6xl mx-auto text-center">
+    <h3 className="text-3xl font-bold mb-6">
+      Service Areas – Dallas–Fort Worth Welding
+    </h3>
+    <p className="text-gray-700 max-w-3xl mx-auto">
+      NUVI Welding & Fabrication proudly provides 24/7 mobile welding services
+      in Dallas, Fort Worth, Arlington, Plano, Frisco, Irving, Garland,
+      McKinney and surrounding Texas communities.
+    </p>
+  </div>
+</section>
+
       {/* CONTACT */}
       <section id="contact" className="py-16 px-6 bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -188,6 +249,47 @@ export default function Page() {
           </form>
         </div>
       </section>
+
+{/* FAQ SECTION */}
+<section className="py-16 px-6 bg-white">
+  <div className="max-w-5xl mx-auto">
+    <h3 className="text-3xl font-bold text-center mb-10">
+      Mobile Welding FAQ – Dallas–Fort Worth
+    </h3>
+
+    <div className="space-y-6">
+      <div>
+        <h4 className="font-semibold text-lg">
+          Do you offer 24/7 emergency mobile welding in Dallas?
+        </h4>
+        <p className="text-gray-700">
+          Yes. NUVI Welding & Fabrication provides 24/7 emergency mobile welding
+          services across Dallas and surrounding areas.
+        </p>
+      </div>
+
+      <div>
+        <h4 className="font-semibold text-lg">
+          What areas do you serve outside Dallas?
+        </h4>
+        <p className="text-gray-700">
+          We serve Fort Worth, Arlington, Plano, Frisco, Irving, Garland,
+          McKinney and surrounding Texas cities.
+        </p>
+      </div>
+
+      <div>
+        <h4 className="font-semibold text-lg">
+          What types of welding projects do you handle?
+        </h4>
+        <p className="text-gray-700">
+          We specialize in fencing, staircases, handrails, barndominiums,
+          structural steel and custom fabrication projects.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* FOOTER */}
       <footer className="bg-black text-gray-300 py-6 text-center text-sm">
