@@ -44,7 +44,7 @@ export default function Page() {
   <img
     src="/nuvi-logo.png"
     alt="NUVI Welding and Fabrication LLC Logo"
-    className="h-135 md:h-16 w-auto"
+    className="h-14 md:h-135 w-auto"
   />
 
   <a
