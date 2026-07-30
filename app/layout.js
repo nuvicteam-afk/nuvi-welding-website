@@ -1,4 +1,3 @@
-
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -17,6 +16,15 @@ export const metadata = {
   description:
     "NUVI Welding and Fabrication LLC provides 24/7 mobile welding, fencing, staircases, handrails, and custom steel fabrication across Dallas–Fort Worth.",
 
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+    viewportFit: "cover",
+  },
+
+  themeColor: "#000000",
+
   openGraph: {
     title: "NUVI Welding and Fabrication LLC",
     description:
@@ -33,6 +41,11 @@ export const metadata = {
     ],
     locale: "en_US",
     type: "website",
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
   },
 };
 
