@@ -1,275 +1,344 @@
 "use client";
 
+import Link from "next/link";
 import { Phone, Mail, Hammer } from "lucide-react";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function Page() {
   return (
-    <>
- 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "NUVI Welding & Fabrication LLC",
-            image: "https://nuviwelding.com/og-image.png",
-            telephone: "+1-469-845-5728",
-            email: "nuvicteam@gmail.com",
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Dallas",
-              addressRegion: "TX",
-              addressCountry: "US",
-            },
-            areaServed: [
-              "Dallas TX",
-              "Fort Worth TX",
-              "Arlington TX",
-              "Plano TX",
-              "Frisco TX",
-              "Irving TX",
-              "Garland TX",
-              "McKinney TX",
-            ],
-            openingHours: "Mo-Su 00:00-23:59",
-          }),
-        }}
-      />
+    <div className="min-h-screen bg-white text-gray-900">
 
-      <div className="min-h-screen bg-white text-gray-900">
+      <Navbar />
 
-<header className="bg-white shadow-md px-4 md:px-6 h-20 flex items-center justify-between fixed top-0 left-0 w-full z-50">
+      {/* ================= HERO ================= */}
 
-  <img
-    src="/nuvi-logo.png"
-    alt="NUVI Welding and Fabrication LLC Logo"
-    className="h-95 md:h-125 w-auto"
-  />
+      <section className="relative h-[90vh] overflow-hidden">
 
-  <a
-    href="tel:4698455728"
-    className="bg-red-600 hover:bg-red-700 text-white px-4 md:px-6 py-2 rounded-full font-semibold text-sm md:text-base whitespace-nowrap transition"
-  >
-    Call 24/7
-  </a>
+        {/* Background Video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/hero-welding.mp4" type="video/mp4" />
+        </video>
 
-</header>
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
 
-        {/* HERO VIDEO */}
-   <section className="relative h-screen w-full overflow-hidden pt-20 md:pt-24">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute top-0 left-0 w-full h-full object-cover"
-          >
-            <source src="/hero-welding.mp4" type="video/mp4" />
-          </video>
+        {/* Hero Content */}
+        <div className="relative z-10 flex h-full items-center justify-center">
 
-          <div className="absolute inset-0 bg-black/70"></div>
+          <div className="text-center text-white max-w-5xl px-6">
 
-          <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6 max-w-4xl mx-auto">
-            <h1 className="text-white text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">
-              NUVI Welding & Fabrication LLC
-            </h1>
-
-            <h2 className="text-red-500 text-2xl md:text-3xl font-semibold tracking-wide mb-6">
-              24/7 Mobile Welding in Dallas–Fort Worth & Surrounding Areas
-            </h2>
-
-            <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-10 max-w-2xl">
-              Emergency and scheduled mobile welding services across Dallas,
-              Fort Worth, Arlington, Plano, Frisco, Irving, Garland, McKinney
-              and surrounding Texas communities. Specializing in fencing,
-              staircases, handrails, barndominiums and custom steel fabrication.
+            <p className="uppercase tracking-[6px] text-red-500 font-bold mb-4">
+              Dallas • Fort Worth • 24/7 Mobile Welding
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-5">
+            <h1 className="text-5xl md:text-7xl font-black leading-tight">
+              Mobile Welding
+              <br />
+              & Fabrication
+            </h1>
+
+            <p className="mt-8 text-xl text-gray-200 max-w-3xl mx-auto">
+              NUVI Welding & Fabrication provides commercial,
+              industrial and emergency mobile welding throughout
+              Dallas–Fort Worth. From structural steel and
+              heavy equipment to gates, handrails and custom
+              fabrication—we come to you.
+            </p>
+
+            <div className="flex flex-col sm:flex-row justify-center gap-5 mt-12">
+
               <a
                 href="tel:4698455728"
-                className="bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-full font-semibold text-lg tracking-wide shadow-lg"
+                className="bg-red-600 hover:bg-red-700 px-10 py-4 rounded-xl font-bold transition"
               >
-                Call Now
+                📞 Call Now
               </a>
+
               <a
                 href="#contact"
-                className="bg-white text-black px-10 py-4 rounded-full font-semibold text-lg tracking-wide shadow-lg"
+                className="bg-white text-black hover:bg-gray-200 px-10 py-4 rounded-xl font-bold transition"
               >
                 Get Free Estimate
               </a>
-            </div>
-          </div>
-        </section>
 
-        {/* SERVICES */}
-        <section className="py-16 px-6 max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Mobile Welding & Fabrication Services in Dallas–Fort Worth
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* ================= SERVICES ================= */}
+
+      <section className="py-20 px-6">
+
+        <div className="max-w-7xl mx-auto">
+
+          <h2 className="text-4xl font-black text-center mb-14">
+            OUR SERVICES
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+
             {[
-              "MOBILE WELDING & FABRICATION",
-              "BARNDOMINIUMS",
-              "FENCING",
-              "HANDRAILS",
-              "STAIRCASES",
+              "Mobile Welding",
+              "Barndominiums",
+              "Steel Fencing",
+              "Handrails",
+              "Staircases",
             ].map((service) => (
+
               <div
                 key={service}
-                className="border border-gray-200 rounded-2xl p-6 text-center shadow-sm"
+                className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-2xl transition"
               >
-                <Hammer className="mx-auto mb-4 text-red-600" />
-                <p className="font-extrabold uppercase text-sm">{service}</p>
-              </div>
-            ))}
-          </div>
-        </section>
 
-        {/* OUR WORK */}
-        <section className="py-16 px-6 bg-gray-100">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-10">
-              Recent Dallas–Fort Worth Welding Projects
+                <Hammer className="mx-auto text-red-600 mb-5" size={42} />
+
+                <h3 className="font-black uppercase">
+                  {service}
+                </h3>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* ================= COMMERCIAL SERVICES ================= */}
+
+      <section className="py-20 bg-gray-900 text-white px-6">
+
+        <div className="max-w-7xl mx-auto">
+
+          <h2 className="text-4xl font-black text-center">
+            Commercial & Industrial Welding
+          </h2>
+
+          <p className="text-center text-gray-300 max-w-3xl mx-auto mt-5 mb-14">
+            Professional welding services for contractors,
+            commercial properties, industrial facilities,
+            apartment complexes and heavy equipment across
+            Dallas–Fort Worth.
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <Link href="/emergency-mobile-welding">
+              <div className="cursor-pointer rounded-2xl bg-white text-black p-8 hover:scale-105 transition shadow-xl">
+                <h3 className="font-black text-2xl mb-3">
+                  🚨 Emergency Mobile Welding
+                </h3>
+                <p>24/7 emergency welding services when downtime isn't an option.</p>
+              </div>
+            </Link>
+
+            <Link href="/commercial-welding">
+              <div className="cursor-pointer rounded-2xl bg-white text-black p-8 hover:scale-105 transition shadow-xl">
+                <h3 className="font-black text-2xl mb-3">
+                  🏢 Commercial Welding
+                </h3>
+                <p>Commercial buildings, contractors and business properties.</p>
+              </div>
+            </Link>
+
+            <Link href="/industrial-welding">
+              <div className="cursor-pointer rounded-2xl bg-white text-black p-8 hover:scale-105 transition shadow-xl">
+                <h3 className="font-black text-2xl mb-3">
+                  🏭 Industrial Welding
+                </h3>
+                <p>Plant maintenance, fabrication and industrial repairs.</p>
+              </div>
+            </Link>
+
+            <Link href="/heavy-equipment-welding">
+              <div className="cursor-pointer rounded-2xl bg-white text-black p-8 hover:scale-105 transition shadow-xl">
+                <h3 className="font-black text-2xl mb-3">
+                  🚜 Heavy Equipment
+                </h3>
+                <p>Excavators, trailers, buckets, loaders and construction equipment.</p>
+              </div>
+            </Link>
+
+            <Link href="/structural-steel-repair">
+              <div className="cursor-pointer rounded-2xl bg-white text-black p-8 hover:scale-105 transition shadow-xl">
+                <h3 className="font-black text-2xl mb-3">
+                  🏗 Structural Steel
+                </h3>
+                <p>Columns, beams, mezzanines and structural steel repairs.</p>
+              </div>
+            </Link>
+
+            <Link href="/gate-repair">
+              <div className="cursor-pointer rounded-2xl bg-white text-black p-8 hover:scale-105 transition shadow-xl">
+                <h3 className="font-black text-2xl mb-3">
+                  🚪 Gate Repair
+                </h3>
+                <p>Apartment gates, commercial gates and security gate welding.</p>
+              </div>
+            </Link>
+
+          </div>
+
+        </div>
+
+      </section>      {/* ================= OUR WORK ================= */}
+
+      <section className="py-20 bg-gray-100 px-6">
+
+        <div className="max-w-7xl mx-auto">
+
+          <h2 className="text-4xl font-black text-center mb-5">
+            Our Recent Projects
+          </h2>
+
+          <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+            We proudly serve homeowners, contractors, businesses and industrial
+            facilities throughout the Dallas–Fort Worth metroplex.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8">
+
+            <img
+              src="/fencing.png"
+              alt="Steel fencing project"
+              className="rounded-2xl shadow-xl h-[320px] w-full object-cover hover:scale-105 transition"
+            />
+
+            <img
+              src="/stairs.png"
+              alt="Steel staircase fabrication"
+              className="rounded-2xl shadow-xl h-[320px] w-full object-cover hover:scale-105 transition"
+            />
+
+            <img
+              src="/handrails.png"
+              alt="Commercial handrails"
+              className="rounded-2xl shadow-xl h-[320px] w-full object-cover hover:scale-105 transition"
+            />
+
+          </div>
+
+          <div className="text-center mt-12">
+
+            <Link
+              href="/projects"
+              className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-bold inline-block transition"
+            >
+              View All Projects
+            </Link>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* ================= CONTACT ================= */}
+
+      <section
+        id="contact"
+        className="py-20 bg-white px-6"
+      >
+
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-14">
+
+          <div>
+
+            <h2 className="text-4xl font-black mb-6">
+              Get Your Free Estimate
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <img src="/fencing.png" alt="Custom steel fencing Dallas TX" className="rounded-2xl shadow-lg h-[300px] w-full object-cover"/>
-              <img src="/stairs.png" alt="Steel staircase fabrication Fort Worth TX" className="rounded-2xl shadow-lg h-[300px] w-full object-cover"/>
-              <img src="/handrails.png" alt="Commercial steel handrails Dallas TX" className="rounded-2xl shadow-lg h-[300px] w-full object-cover"/>
-            </div>
-          </div>
-        </section>
-
-        {/* SERVICE AREA */}
-        <section className="py-16 px-6 bg-white">
-          <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-6">
-  Service Areas
-</h2>
-
-<h3 className="text-xl md:text-2xl font-semibold text-red-600 tracking-wide mb-6">
-  Dallas–Fort Worth & Surrounding Cities
-</h3>
-            <p className="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
-              Proudly serving Dallas, Fort Worth, Arlington, Plano, Frisco,
-              Irving, Garland, McKinney and surrounding Texas communities, We also serve surrounding states like Oklahoma,
-          Louisiana, Arkansas and New Mexico. 
+            <p className="text-gray-600 mb-10">
+              Need emergency welding or a scheduled fabrication project?
+              Contact NUVI Welding & Fabrication today for a free estimate.
             </p>
-          </div>
-          
-        <div className="mt-8 p-6 bg-gray-50 rounded-2xl border border-gray-200 text-center">
-  <p className="text-gray-700 text-lg">
-    Looking for dedicated Dallas service?
-  </p>
 
-  <a
-    href="/mobile-welding-dallas"
-    className="inline-block mt-3 text-red-600 hover:text-red-700 font-semibold text-lg tracking-wide transition"
-  >
-    View Our Mobile Welding Dallas Page →
-  </a>
-</div>
-      
-        </section>
+            <div className="space-y-6">
 
-        {/* CONTACT */}
-        <section id="contact" className="py-16 px-6 bg-white">
-          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div>
-<h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-6">
-  Get a Free Estimate
-</h2>
-<p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-lg">
-                Fast response. 24/7 emergency mobile welding available across Dallas–Fort Worth.
-              </p>
-
-              <div className="space-y-4 text-lg">
-                <div className="flex items-center gap-3">
-                  <Phone className="text-red-600" />
-                  <span>(469) 845-5728</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Mail className="text-red-600" />
-                  <span>nuvicteam@gmail.com</span>
-                </div>
+              <div className="flex items-center gap-4">
+                <Phone className="text-red-600" />
+                <span className="text-lg font-semibold">
+                  (469) 845-5728
+                </span>
               </div>
+
+              <div className="flex items-center gap-4">
+                <Mail className="text-red-600" />
+                <span className="text-lg">
+                  nuvicteam@gmail.com
+                </span>
+              </div>
+
             </div>
 
-            <form
-              action="https://formspree.io/f/xpqjlbqa"
-              method="POST"
-              className="bg-gray-100 p-6 rounded-2xl shadow"
-            >
-              <input type="text" name="name" placeholder="Name" required className="w-full mb-4 p-3 rounded-lg border"/>
-              <input type="tel" name="phone" placeholder="Phone" required className="w-full mb-4 p-3 rounded-lg border"/>
-              <input type="email" name="email" placeholder="Email" className="w-full mb-4 p-3 rounded-lg border"/>
-              <textarea name="details" placeholder="Project details" required rows={4} className="w-full mb-4 p-3 rounded-lg border"/>
-              <button type="submit" className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-xl">
-                REQUEST FREE ESTIMATE
-              </button>
-            </form>
           </div>
-        </section>
 
-{/* FAQ SECTION */}
-<section className="py-20 px-6 bg-gray-50">
-  <div className="max-w-4xl mx-auto">
+          <form
+            action="mailto:nuvicteam@gmail.com"
+            method="POST"
+            encType="text/plain"
+            className="bg-gray-100 rounded-2xl shadow-xl p-8"
+          >
 
-    <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-center text-gray-900 mb-4">
-      Mobile Welding FAQ
-    </h2>
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              required
+              className="w-full p-4 rounded-lg border mb-5"
+            />
 
-    <p className="text-center text-lg text-gray-600 mb-14">
-      Answers to common questions about our 24/7 mobile welding services in
-      Dallas–Fort Worth and surrounding areas.
-    </p>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              required
+              className="w-full p-4 rounded-lg border mb-5"
+            />
 
-    <div className="space-y-10">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              className="w-full p-4 rounded-lg border mb-5"
+            />
 
-      <div className="border-b border-gray-200 pb-6">
-        <h3 className="text-xl md:text-2xl font-semibold tracking-tight text-gray-900 mb-3">
-          Do you offer 24/7 emergency mobile welding in Dallas?
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-lg">
-          Yes. NUVI Welding & Fabrication LLC provides 24/7 emergency mobile
-          welding services throughout Dallas and surrounding Texas cities.
-        </p>
-      </div>
+            <textarea
+              rows={5}
+              name="details"
+              placeholder="Tell us about your project..."
+              required
+              className="w-full p-4 rounded-lg border mb-6"
+            />
 
-      <div className="border-b border-gray-200 pb-6">
-        <h3 className="text-xl md:text-2xl font-semibold tracking-tight text-gray-900 mb-3">
-          What areas do you serve outside Dallas?
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-lg">
-          We proudly serve Fort Worth, Arlington, Plano, Frisco, Irving,
-          Garland, McKinney and other surrounding cities. We also serve All Texas Surrounding States Like Oklahoma,
-            Louisiana, Arkansas and New Mexico.
-        </p>
-      </div>
+            <button
+              type="submit"
+              className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 rounded-xl transition"
+            >
+              REQUEST FREE ESTIMATE
+            </button>
 
-      <div className="border-b border-gray-200 pb-6">
-        <h3 className="text-xl md:text-2xl font-semibold tracking-tight text-gray-900 mb-3">
-          What types of welding projects do you handle?
-        </h3>
-        <p className="text-gray-600 leading-relaxed text-lg">
-          We specialize in fencing, staircases, handrails, Stainless Steel, barndominiums,
-          structural steel and custom metal fabrication projects.
-        </p>
-      </div>
+          </form>
+
+        </div>
+
+      </section>
+
+      <Footer />
 
     </div>
-  </div>
-</section>
-
-        {/* FOOTER */}
-        <footer className="bg-black text-gray-300 py-6 text-center text-sm">
-          © {new Date().getFullYear()} NUVI Welding and Fabrication LLC • 24/7 Mobile Welding Dallas–Fort Worth
-        </footer>
-      </div>
-    </>
   );
 }
-
